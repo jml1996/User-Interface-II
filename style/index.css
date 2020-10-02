@@ -1,1 +1,98 @@
-/* Add CSS styling here */
+
+
+header {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navi a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.middle {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.large_container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 6%;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.large_container .big_proj {
+    display: flex;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.project {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 29.6296296296%;
+}
+
+.project h6 {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.project img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    padding: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
