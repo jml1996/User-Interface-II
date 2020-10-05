@@ -1,1 +1,226 @@
-/* Add CSS styling here */
+
+
+header {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.navi a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.middle {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.large_container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 6%;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.large_container .big_proj {
+    display: flex;
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.project {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 29.6296296296%;
+}
+
+.project h6 {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.project img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    padding: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+/* 800px; tablet */
+@media(max-width:800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+
+    header .name h1 {
+        font-size: x-large;
+    }
+
+    .navi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navi a {
+        font-size: medium;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .large_container img {
+        /* border: dotted; */
+        width: 100%;
+    }
+
+    .large_container {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 6%;
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
+    .large_container .big_proj {
+        width: 100%;
+        font-size: xx-large;
+        /* border: dotted; */
+    }
+
+    .project {
+        width: 46%;
+    }
+
+    .contact a {
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+} 
+/* this closes the 800px media query */
+
+/* 500px; mobile */
+@media(max-width:500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        /* border: dotted; */
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+
+    header .name h1 {
+        font-size: x-large;
+    }
+
+    .navi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navi a {
+        font-size: small;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .large_container img {
+        width: 100%;
+    }
+
+    .large_container {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 6%;
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
+    .large_container .big_proj {
+        width: 100%;
+        font-size: x-large;
+        /* border: dotted; */
+    }
+
+    .project {
+        width: 46%;
+    }
+
+    .contact a {
+        font-size: small;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+}
