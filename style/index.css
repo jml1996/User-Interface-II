@@ -18,6 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 40%;
 }
 
 .navi a {
@@ -95,4 +96,131 @@ footer {
 .contact a {
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
+}
+
+
+/* Media Queries */
+/* 800px; tablet */
+@media(max-width:800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+
+    header .name h1 {
+        font-size: x-large;
+    }
+
+    .navi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navi a {
+        font-size: medium;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .large_container img {
+        /* border: dotted; */
+        width: 100%;
+    }
+
+    .large_container {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 6%;
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
+    .large_container .big_proj {
+        width: 100%;
+        font-size: xx-large;
+        /* border: dotted; */
+    }
+
+    .project {
+        width: 46%;
+    }
+
+    .contact a {
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+} 
+/* this closes the 800px media query */
+
+/* 500px; mobile */
+@media(max-width:500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        /* border: dotted; */
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+
+    header .name h1 {
+        font-size: x-large;
+    }
+
+    .navi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navi a {
+        font-size: small;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .large_container img {
+        width: 100%;
+    }
+
+    .large_container {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 6%;
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
+    .large_container .big_proj {
+        width: 100%;
+        font-size: x-large;
+        /* border: dotted; */
+    }
+
+    .project {
+        width: 46%;
+    }
+
+    .contact a {
+        font-size: small;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
 }
